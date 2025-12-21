@@ -38,41 +38,14 @@ footer {
   text-align: center;
 }
 
-/* login.html */
-main > #login-table {
+/* board.html */
+#board {
+  width: 700px;
   margin: auto;
 }
 
-main > #login-table input[type="text"],
-main > #login-table input[type="password"] {
-  border: 0;
-  width: 300px;
-  height: 30px;
-  background-color: whitesmoke;
-}
-
-main > #login-table input[type="submit"],
-main > #login-table input[type="button"] {
-  border: 0;
-  width: 150px;
-  height: 25px;
-}
-
-/* join.html */
-main > #join-table {
-  margin: auto;
-}
-
-main > #join-table input[type="text"],
-main > #join-table input[type="password"] {
-  border: 0;
-  width: 150px;
-  height: 30px;
-  background-color: whitesmoke;
-}
-
-main > #join-table input[type="submit"] {
-  border: 0;
-  width: 150px;
-  height: 25px;
+#board,
+#board td {
+  border: 1px solid;
+  border-collapse: collapse;
 }
