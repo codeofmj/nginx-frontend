@@ -1,7 +1,7 @@
 const tbody = document.querySelector("#board > tbody");
 
 const getList = async () => {
-  let res = await axios("http://10.2.2.6:8081/list");
+  let res = await axios("http://localhost:8081/api/board/list");
   let boardList = res.data;
   let resultHTML = "";
 

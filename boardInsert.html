@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngnix서버 페이지</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Nginx를 활용한 웹 페이지 실습</h1>
+            <ul id="nav-list">
+                <li class="nav-item"><a href="index.html">메인페이지</a></li>
+                <li class="nav-item"><a href="about.html">상세페이지</a></li>
+                <li class="nav-item"><a href="board.html">게시판</a></li>
+            </ul>
+        </header>
+        <main>
+            <form action="#" id="boardFrm" onsubmit="return false;">
+                <table id="board">
+                    <tbody>
+                        <tr>
+                            <td>제목</td>
+                            <td><input type="text" name="b_title"></td>
+                        </tr>
+                        <tr>
+                            <td>작성자</td>
+                            <td><input type="text" name="b_writer"></td>
+                        </tr>
+                        <tr>
+                            <td>내용</td>
+                            <td><textarea name="b_content" cols="80" rows="10"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="작성">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            <a href="board.html">게시글목록</a>
+        </main>
+        <footer>
+            <p>Copyright ⓒ 생성형AI과정. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

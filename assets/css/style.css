@@ -49,3 +49,8 @@ footer {
   border: 1px solid;
   border-collapse: collapse;
 }
+
+/* boardInsert.html */
+#boardFrm td:nth-child(3n-1) {
+  text-align: left;
+}
