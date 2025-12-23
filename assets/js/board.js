@@ -1,7 +1,8 @@
 const tbody = document.querySelector("#board > tbody");
 
+//데이터 요청 함수 구현
 const getList = async () => {
-  let res = await axios("http://localhost:8081/api/board/list");
+  let res = await axios.get("http://localhost:8081/api/board/list");
   let boardList = res.data;
   let resultHTML = "";
 

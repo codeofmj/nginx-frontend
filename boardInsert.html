@@ -20,7 +20,8 @@
             </ul>
         </header>
         <main>
-            <form action="#" id="boardFrm" onsubmit="return false;">
+            <form action="#" id="boardFrm" name="boardFrm" onsubmit="return false;" method="post"
+                enctype="multipart/form-data">
                 <table id="board">
                     <tbody>
                         <tr>
@@ -37,7 +38,7 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <input type="submit" value="작성">
+                                <input type="submit" value="작성" id="addBoardBtn">
                             </td>
                         </tr>
                     </tbody>
@@ -51,6 +52,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/boardInsert.js"></script>
 </body>
 
 </html>
