@@ -17,15 +17,14 @@ const getList = async () => {
     resultHTML += `
         <tr>
             <td>${board.b_idx}</td>
-            <td>${board.b_title}</td>
+            <td><a href="boardDetail.html?b_idx=${board.b_idx}">${board.b_title}</a></td>
             <td>${board.b_writer}</td>
             <td>${board.b_datetime}</td>
             <td>${board.b_count}</td>
         </tr>
     `;
-
-    tbody.innerHTML = resultHTML;
   }
+  tbody.innerHTML = resultHTML;
 };
 
 getList();

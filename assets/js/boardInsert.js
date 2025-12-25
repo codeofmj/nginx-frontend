@@ -12,11 +12,11 @@ const boardInsert = async (e) => {
   let bData = new FormData(boardFrm);
 
   try {
-    // let res = await axios.post(
-    //   "http://localhost:8081/api/board/register",
-    //   bData
-    // );
-    let res = await axios.post("/api/board/register", bData);
+    let res = await axios.post(
+      "http://localhost:8081/api/board/register",
+      bData
+    );
+    // let res = await axios.post("/api/board/register", bData);
 
     console.log(res.data);
   } catch (err) {
